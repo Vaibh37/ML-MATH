@@ -7,11 +7,14 @@ The focus is on **what each concept means in code**, **how to represent it with 
 ## Study structure
 
 ### Linear algebra
-1. [Vectors — Introduction (CS perspective)](linear-algebra/01-vectors-introduction.md) — studied 14 October 2026.
-2. Dot product and vector magnitude — next.
-3. Matrices and matrix multiplication — planned.
+
+1. [Vectors — Introduction (CS perspective)](linear-algebra/01-vectors-introduction.md)
+2. [Vectors — Worked lessons and formula cheatsheet](linear-algebra/vectors/README.md) — addition, subtraction, scalar multiplication, linear combinations, dot product, magnitude, normalization. Studied 14 October 2026.
+3. Angles, cosine similarity, projection, span, and linear independence — planned.
+4. Matrices and matrix multiplication — planned.
 
 ### Later
+
 - Calculus: derivatives, partial derivatives, chain rule, gradients, gradient descent.
 - Probability and statistics: distributions, expectation, variance, conditional probability.
 
