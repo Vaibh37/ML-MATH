@@ -2,7 +2,7 @@
 
 Quick reference for exact values in **degrees**. Useful for vectors, dot products, cosine similarity and machine learning mathematics.
 
-![Normal and inverse trigonometry tables](https://raw.githubusercontent.com/Vaibh37/ML-MATH/main/trigonometry/assets/trigonometry_normal_inverse.png)
+![Normal and inverse trigonometry tables](assets/trigonometry_normal_inverse.png)
 
 ## 1. Normal trigonometric values
 
