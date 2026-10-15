@@ -14,11 +14,17 @@ The focus is on **what each concept means in code**, **how to represent it with 
 4. [Matrices and broadcasting](linear-algebra/matrices/README.md) — shapes, arithmetic, multiplication, transpose, and bias addition.
 5. [Trigonometry tables](trigonometry/TRIG_CHEATSHEET.md) — normal and inverse functions with a PNG reference.
 
-Projection, eigenvectors, calculus, and deeper statistics remain future topics.
+Projection, eigenvectors, and deeper statistics remain future topics. The introductory calculus below has now been practiced.
+
+### Calculus (15 October 2026 checkpoint)
+
+- [Derivative and loss quick cheatsheet](calculus/00-derivatives-cheatsheet.md) — notation, power rule, chain rule and partial derivatives.
+- [Derivatives applied to squared-error loss](calculus/01-derivatives-and-loss.md) — worked examples, including where `L(w,b)` comes from.
+- **Practiced:** basic derivatives, chain rule and partial derivatives. **Not yet implemented:** gradient descent, training updates, backpropagation.
 
 ### Later
 
-- Calculus: derivatives, partial derivatives, chain rule, gradients, gradient descent.
+- Calculus next: full MSE gradients, gradient descent and backpropagation.
 - Probability and statistics: distributions, expectation, variance, conditional probability.
 
 ## Method
