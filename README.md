@@ -10,8 +10,11 @@ The focus is on **what each concept means in code**, **how to represent it with 
 
 1. [Vectors — Introduction (CS perspective)](linear-algebra/01-vectors-introduction.md)
 2. [Vectors — Worked lessons and formula cheatsheet](linear-algebra/vectors/README.md) — addition, subtraction, scalar multiplication, linear combinations, dot product, magnitude, normalization. Studied 14 October 2026.
-3. Angles, cosine similarity, projection, span, and linear independence — planned.
-4. Matrices and matrix multiplication — planned.
+3. [Angles and cosine similarity](linear-algebra/vectors/07-angles-and-cosine-similarity.md) — reviewed and practiced.
+4. [Matrices and broadcasting](linear-algebra/matrices/README.md) — shapes, arithmetic, multiplication, transpose, and bias addition.
+5. [Trigonometry tables](trigonometry/TRIG_CHEATSHEET.md) — normal and inverse functions with a PNG reference.
+
+Projection, eigenvectors, calculus, and deeper statistics remain future topics.
 
 ### Later
 

@@ -43,13 +43,13 @@ $$
 
 **Common mistake:** $1/\sqrt5+2/\sqrt5$ is **not** the magnitude.
 
-## Geometry formulas (preview — study next)
+## Geometry formulas (reviewed)
 
 $\mathbf a\cdot\mathbf b=\|\mathbf a\|\|\mathbf b\|\cos\theta$.
 
 $\cos\theta=\dfrac{\mathbf a\cdot\mathbf b}{\|\mathbf a\|\|\mathbf b\|}$ for two nonzero vectors.
 
-These geometric interpretations have **not** been practiced yet.
+These geometric interpretations were practiced with 0°, 90°, and 180° examples. See [vector angles](07-angles-and-cosine-similarity.md).
 
 ## NumPy reference
 

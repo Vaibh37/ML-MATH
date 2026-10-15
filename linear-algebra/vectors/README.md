@@ -12,6 +12,7 @@ Start with the [formula cheatsheet](00-formula-cheatsheet.md), then follow the l
 | [04](04-dot-product.md) | Dot product and scalar output | Practiced |
 | [05](05-vector-magnitude.md) | Euclidean length in 2D and 3D | Practiced |
 | [06](06-unit-vectors.md) | Normalization and checking length = 1 | Practiced |
+| [07](07-angles-and-cosine-similarity.md) | Angles and cosine similarity | Practiced |
 
 **Existing introductory lesson:** [Vectors: CS perspective](../01-vectors-introduction.md).
 
@@ -30,4 +31,4 @@ Start with the [formula cheatsheet](00-formula-cheatsheet.md), then follow the l
 
 ## Next concepts (not completed yet)
 
-Angles between vectors, cosine similarity, projection, span, linear independence, and matrices.
+Projection, span, and linear independence remain to study. Continue with [matrices](../matrices/README.md).
