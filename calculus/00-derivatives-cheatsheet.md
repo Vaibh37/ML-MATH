@@ -27,13 +27,13 @@ Assume $c$ is constant and the derivative is with respect to $w$:
 
 Nested example:
 
-$$
+```math
 \begin{aligned}
 y &= (4w^2+3)^3\\
 \frac{dy}{dw} &= 3(4w^2+3)^2\cdot8w\\
 &= 24w(4w^2+3)^2
 \end{aligned}
-$$
+```
 
 **Common slip:** Keep the outside exponent $2$ after differentiating the cube; do not drop it.
 
@@ -54,21 +54,21 @@ For $\hat y=wx+b$, with $x$, $w$ and $b$ treated as independent inputs:
 
 Given one labeled example $x=4$, $y=10$ and prediction $\hat y=wx+b$:
 
-$$
+```math
 \begin{aligned}
 \hat y &=4w+b\\
 L(w,b)&=(\hat y-y)^2=(4w+b-10)^2
 \end{aligned}
-$$
+```
 
 The derivative of the one-example loss follows the chain rule:
 
-$$
+```math
 \begin{aligned}
 \frac{\partial L}{\partial w}&=2(4w+b-10)\cdot4=8(4w+b-10)\\
 \frac{\partial L}{\partial b}&=2(4w+b-10)\cdot1=2(4w+b-10)
 \end{aligned}
-$$
+```
 
 This is a **single-sample squared-error example**, not yet a batch MSE gradient.
 
