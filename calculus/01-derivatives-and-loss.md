@@ -23,12 +23,12 @@ There is no RHS-to-LHS rearrangement. Differentiation is a new operation on a fu
 
 **Power and sum rules:**
 
-$$
+```math
 \begin{aligned}
 y&=4w^2+3w+7\\
 \frac{dy}{dw}&=8w+3
 \end{aligned}
-$$
+```
 
 This exercise was solved independently.
 
@@ -36,29 +36,29 @@ This exercise was solved independently.
 
 When $y=[g(w)]^n$, first differentiate the outer power and then multiply by the derivative of the inner expression:
 
-$$
+```math
 \frac{dy}{dw}=n[g(w)]^{n-1}g'(w)
-$$
+```
 
 Example: $y=(2w+5)^2$
 
-$$
+```math
 \begin{aligned}
 \text{Outside: }&2(2w+5)\\
 \text{Inside: }&2\\
 \text{Result: }&4(2w+5)
 \end{aligned}
-$$
+```
 
 Example with a squared term inside a cube: $y=(2w^2+3w+1)^3$
 
-$$
+```math
 \begin{aligned}
 \text{Outside: }&3(2w^2+3w+1)^2\\
 \text{Inside: }&4w+3\\
 \text{Result: }&3(2w^2+3w+1)^2(4w+3)
 \end{aligned}
-$$
+```
 
 Example: $y=(4w^2+3)^3$ has derivative $24w(4w^2+3)^2$. A practice attempt omitted the exponent on the outer parentheses; the corrected rule keeps it.
 
@@ -75,30 +75,30 @@ Both results were practiced correctly.
 
 Start from the **prediction** for a single feature:
 
-$$
+```math
 \hat y=wx+b
-$$
+```
 
 If the labeled training example is $x=4$ and $y=10$:
 
-$$
+```math
 \begin{aligned}
 \hat y&=4w+b\\
 L&=(\hat y-y)^2\\
 L(w,b)&=(4w+b-10)^2
 \end{aligned}
-$$
+```
 
 The number 4 comes from input $x$, and 10 comes from target $y$. The variables $w$ and $b$ stay symbolic because we want to learn their values. This is the **squared-error loss for one example**, not the full-dataset MSE.
 
 Use chain rule to differentiate:
 
-$$
+```math
 \begin{aligned}
 \frac{\partial L}{\partial w}&=2(4w+b-10)\cdot4\\
 \frac{\partial L}{\partial b}&=2(4w+b-10)\cdot1
 \end{aligned}
-$$
+```
 
 The separate derivatives tell us how sensitive the loss is to each parameter. Later, gradient descent will use them to make updates.
 
