@@ -21,11 +21,12 @@ Projection, eigenvectors, and deeper statistics remain future topics. The introd
 - [Derivative and loss quick cheatsheet](calculus/00-derivatives-cheatsheet.md) — notation, power rule, chain rule and partial derivatives.
 - [Derivatives applied to squared-error loss](calculus/01-derivatives-and-loss.md) — worked examples, including where `L(w,b)` comes from.
 - [Gradient descent from a one-example loss](calculus/02-gradient-descent-single-sample.md) — derivation of gradients, five checked updates, learning rate and overshooting.
-- **Practiced and coded:** single-example weight/bias gradients and five-step training loop (16 October). **Not yet implemented:** full-dataset training or multi-layer backpropagation.
+- [Dataset MSE gradients and ReLU chain rule](calculus/03-batch-mse-and-relu-chain-rule.md) — full-batch gradient derivation, vectorization, and the first gradient through activation.
+- **Practiced and coded:** single-example gradient descent and four-example NumPy full-batch gradient descent with five verified epochs (16 October). **Introduced:** ReLU derivative and chain rule through activation. **Not yet implemented:** multi-layer backpropagation.
 
 ### Later
 
-- Calculus next: full-dataset MSE gradients and backpropagation through a hidden layer.
+- Calculus next: complete gradient through a single activated neuron, then backpropagation through a hidden layer.
 - Probability and statistics: distributions, expectation, variance, conditional probability.
 
 ## Method

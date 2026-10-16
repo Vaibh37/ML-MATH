@@ -1,6 +1,6 @@
 # Derivatives for ML — Quick Cheat Sheet
 
-**Checkpoint: 16 October 2026.** Partial derivatives and a single-example gradient descent training loop have been practiced. Hidden-layer backpropagation has **not** been implemented.
+**Checkpoint: 16 October 2026.** Single-example and four-example dataset gradients and parameter updates have been practiced. ReLU derivative and one chain-rule step introduced. Hidden-layer backpropagation has **not** been implemented.
 
 ## Reading the notation
 
@@ -70,7 +70,7 @@ The derivative of the one-example loss follows the chain rule:
 \end{aligned}
 ```
 
-This is a **single-sample squared-error example**, not yet a batch MSE gradient.
+This is a **single-sample squared-error example**. The full-batch MSE extension is documented in [lesson 03](03-batch-mse-and-relu-chain-rule.md).
 
 For interpretation and full worked lessons, see [01-derivatives-and-loss.md](01-derivatives-and-loss.md). Loss examples: [Neural-Network](https://github.com/Vaibh37/Neural-Network).
 
@@ -92,3 +92,34 @@ L&=(\hat y-y)^2,\\
 Gradient descent: new weight = old weight − (learning rate × weight gradient). Same for bias. With x=2, target y=10, initial w=3, b=1, and learning rate 0.05: the first gradients are dw=−12, db=−6; updated w=3.6, b=1.3; prediction improves 7→8.5 and loss decreases 9→2.25.
 
 **Watch out:** loss is the error measure, not the desired target. Large learning rates can increase loss. Detailed example: [02-gradient-descent-single-sample.md](02-gradient-descent-single-sample.md).
+
+
+## Full-batch gradients (four examples; 16 October)
+
+For n examples with predictions y-hat_i = wx_i + b and dataset MSE:
+
+~~~math
+L(w,b)=\frac1n\sum_{i=1}^n(\hat y_i-y_i)^2
+~~~
+
+~~~math
+dw=\frac{\partial L}{\partial w}=\frac2n\sum_{i=1}^n(\hat y_i-y_i)x_i
+~~~
+
+~~~math
+db=\frac{\partial L}{\partial b}=\frac2n\sum_{i=1}^n(\hat y_i-y_i)
+~~~
+
+With x=[1,2,3,4], y=[5,10,15,20], w=3, b=1: dw=−25, db=−8, MSE=21. At alpha=0.05, one correct update gives w=4.25, b=1.4 and MSE=0.92875. Five updates give MSE ≈ 0.325768.
+
+## ReLU chain rule (introduced; not multi-layer backprop)
+
+z=wx+b, a=ReLU(z), L=(a−y)^2.
+
+~~~math
+\frac{\partial L}{\partial z}
+=\frac{\partial L}{\partial a}\cdot\frac{\partial a}{\partial z}
+=2(a-y)\operatorname{ReLU}'(z).
+~~~
+
+ReLU'(z) = 0 for z<0; 1 for z>0; undefined at z=0 (often 0 in code). Read the detailed derivation in [lesson 03](03-batch-mse-and-relu-chain-rule.md). Next: gradients through w and b of an activated neuron, then hidden layers.
