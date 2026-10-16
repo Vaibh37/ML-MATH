@@ -16,15 +16,16 @@ The focus is on **what each concept means in code**, **how to represent it with 
 
 Projection, eigenvectors, and deeper statistics remain future topics. The introductory calculus below has now been practiced.
 
-### Calculus (15 October 2026 checkpoint)
+### Calculus (16 October 2026 checkpoint)
 
 - [Derivative and loss quick cheatsheet](calculus/00-derivatives-cheatsheet.md) — notation, power rule, chain rule and partial derivatives.
 - [Derivatives applied to squared-error loss](calculus/01-derivatives-and-loss.md) — worked examples, including where `L(w,b)` comes from.
-- **Practiced:** basic derivatives, chain rule and partial derivatives. **Not yet implemented:** gradient descent, training updates, backpropagation.
+- [Gradient descent from a one-example loss](calculus/02-gradient-descent-single-sample.md) — derivation of gradients, five checked updates, learning rate and overshooting.
+- **Practiced and coded:** single-example weight/bias gradients and five-step training loop (16 October). **Not yet implemented:** full-dataset training or multi-layer backpropagation.
 
 ### Later
 
-- Calculus next: full MSE gradients, gradient descent and backpropagation.
+- Calculus next: full-dataset MSE gradients and backpropagation through a hidden layer.
 - Probability and statistics: distributions, expectation, variance, conditional probability.
 
 ## Method

@@ -1,6 +1,6 @@
 # Derivatives for ML — Quick Cheat Sheet
 
-**Checkpoint: 15 October 2026.** Basic differentiation and partial derivatives have been practiced. Gradient descent updates and backpropagation have **not** been implemented.
+**Checkpoint: 16 October 2026.** Partial derivatives and a single-example gradient descent training loop have been practiced. Hidden-layer backpropagation has **not** been implemented.
 
 ## Reading the notation
 
@@ -73,3 +73,22 @@ The derivative of the one-example loss follows the chain rule:
 This is a **single-sample squared-error example**, not yet a batch MSE gradient.
 
 For interpretation and full worked lessons, see [01-derivatives-and-loss.md](01-derivatives-and-loss.md). Loss examples: [Neural-Network](https://github.com/Vaibh37/Neural-Network).
+
+
+## Gradient descent from one-example squared error (16 October)
+
+For prediction y-hat = wx + b and **one** target y:
+
+~~~math
+\begin{aligned}
+L&=(\hat y-y)^2,\\
+\frac{\partial L}{\partial w}&=2(\hat y-y)x,\\
+\frac{\partial L}{\partial b}&=2(\hat y-y).
+\end{aligned}
+~~~
+
+**Why x?** In d(wx)/dw, x is constant. **Why not x in the bias gradient?** In d(wx+b−y)/db, the inside derivative is 1.
+
+Gradient descent: new weight = old weight − (learning rate × weight gradient). Same for bias. With x=2, target y=10, initial w=3, b=1, and learning rate 0.05: the first gradients are dw=−12, db=−6; updated w=3.6, b=1.3; prediction improves 7→8.5 and loss decreases 9→2.25.
+
+**Watch out:** loss is the error measure, not the desired target. Large learning rates can increase loss. Detailed example: [02-gradient-descent-single-sample.md](02-gradient-descent-single-sample.md).
