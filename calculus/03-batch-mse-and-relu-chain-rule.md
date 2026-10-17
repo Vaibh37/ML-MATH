@@ -103,7 +103,7 @@ Five epochs of full-batch gradient descent reach MSE ≈ **0.325768**. A lower l
 We now introduce a nonlinear activation:
 
 ~~~math
-z=wx+b,\qquad a=\operatorname{ReLU}(z),\qquad L=(a-y)^2.
+z=wx+b,\qquad a=\mathrm{ReLU}(z),\qquad L=(a-y)^2.
 ~~~
 
 Read ∂L/∂z as "how the loss changes when z changes." z changes a, and a changes L, so the rates multiply **along this dependency**:
