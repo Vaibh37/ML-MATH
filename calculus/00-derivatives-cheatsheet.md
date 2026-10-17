@@ -119,7 +119,7 @@ z=wx+b, a=ReLU(z), L=(a−y)^2.
 ~~~math
 \frac{\partial L}{\partial z}
 =\frac{\partial L}{\partial a}\cdot\frac{\partial a}{\partial z}
-=2(a-y)\operatorname{ReLU}'(z).
+=2(a-y)\mathrm{ReLU}'(z).
 ~~~
 
 ReLU'(z) = 0 for z<0; 1 for z>0; undefined at z=0 (often 0 in code). Read the detailed derivation in [lesson 03](03-batch-mse-and-relu-chain-rule.md). Next: gradients through w and b of an activated neuron, then hidden layers.
