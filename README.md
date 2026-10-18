@@ -16,17 +16,18 @@ The focus is on **what each concept means in code**, **how to represent it with 
 
 Projection, eigenvectors, and deeper statistics remain future topics. The introductory calculus below has now been practiced.
 
-### Calculus (16 October 2026 checkpoint)
+### Calculus (updated 18 October 2026)
 
 - [Derivative and loss quick cheatsheet](calculus/00-derivatives-cheatsheet.md) — notation, power rule, chain rule and partial derivatives.
 - [Derivatives applied to squared-error loss](calculus/01-derivatives-and-loss.md) — worked examples, including where `L(w,b)` comes from.
 - [Gradient descent from a one-example loss](calculus/02-gradient-descent-single-sample.md) — derivation of gradients, five checked updates, learning rate and overshooting.
 - [Dataset MSE gradients and ReLU chain rule](calculus/03-batch-mse-and-relu-chain-rule.md) — full-batch gradient derivation, vectorization, and the first gradient through activation.
-- **Practiced and coded:** single-example gradient descent and four-example NumPy full-batch gradient descent with five verified epochs (16 October). **Introduced:** ReLU derivative and chain rule through activation. **Not yet implemented:** multi-layer backpropagation.
+- [Full XOR chain-rule derivation](calculus/04-xor-backpropagation-chain-rule.md) — output and hidden-layer derivatives, gradient shapes, and all 13 parameter updates.
+- **Practiced and coded (16 October):** single-example and full-batch linear-neuron training. **Completed (18 October):** derived and implemented full two-layer XOR backpropagation, including six hidden weight gradients, three hidden bias gradients, three output weight gradients, and one output bias gradient. See [the NumPy implementation](https://github.com/Vaibh37/Neural-Network/blob/main/examples/xor_network.py). Numerical checking of all gradients remains deferred.
 
 ### Later
 
-- Calculus next: complete gradient through a single activated neuron, then backpropagation through a hidden layer.
+- Calculus next: numerical gradient checking (deferred), then Jacobians and vectorized derivative reasoning when needed.
 - Probability and statistics: distributions, expectation, variance, conditional probability.
 
 ## Method
