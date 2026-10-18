@@ -4,6 +4,10 @@ Practical mathematics notes for computer science, machine learning, deep learnin
 
 The focus is on **what each concept means in code**, **how to represent it with NumPy**, and **where it appears in ML systems**. These are learning notes, not a full university mathematics syllabus.
 
+**Start here:** [Vectors and linear algebra](linear-algebra/vectors/README.md) · [Derivative cheatsheet](calculus/00-derivatives-cheatsheet.md) · [XOR backpropagation derivation](calculus/04-xor-backpropagation-chain-rule.md) · [Working XOR neural network](https://github.com/Vaibh37/Neural-Network)
+
+If these explanations are helpful, consider **starring this repository**. Corrections and constructive feedback are welcome through [GitHub Issues](https://github.com/Vaibh37/ML-MATH/issues).
+
 ## Study structure
 
 ### Linear algebra
