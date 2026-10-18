@@ -32,7 +32,7 @@ L=\frac1N\sum_{i=1}^N\big(a_o^{(i)}-y^{(i)}\big)^2
 
 The computational path is **X → Z_h → H → Z_o → A_o → L**. Backpropagation follows it in the opposite direction.
 
-![Computational path](https://raw.githubusercontent.com/Vaibh37/Neural-Network/main/assets/xor/d04-forward-flow.svg)
+[Visual: forward propagation and tensor shapes](https://github.com/Vaibh37/Neural-Network/blob/main/assets/xor/d04-forward-flow.png)
 
 ## 2. Derive the output pre-activation gradient
 
